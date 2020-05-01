@@ -52,10 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Articulo.cs">
+    <Compile Include="Formularios\Articulo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Articulo.Designer.cs">
+    <Compile Include="Formularios\Articulo.Designer.cs">
       <DependentUpon>Articulo.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Articulos.cs" />
@@ -67,84 +67,84 @@
     <Compile Include="Clases\Proveedores.cs" />
     <Compile Include="Clases\Salida.cs" />
     <Compile Include="Clases\Usuarios.cs" />
-    <Compile Include="DevolucionSalida.cs">
+    <Compile Include="Formularios\DevolucionSalida.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DevolucionSalida.Designer.cs">
+    <Compile Include="Formularios\DevolucionSalida.Designer.cs">
       <DependentUpon>DevolucionSalida.cs</DependentUpon>
     </Compile>
-    <Compile Include="Departamento.cs">
+    <Compile Include="Formularios\Departamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Departamento.Designer.cs">
+    <Compile Include="Formularios\Departamento.Designer.cs">
       <DependentUpon>Departamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Devolucionentrada.cs">
+    <Compile Include="Formularios\Devolucionentrada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Devolucionentrada.Designer.cs">
+    <Compile Include="Formularios\Devolucionentrada.Designer.cs">
       <DependentUpon>Devolucionentrada.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empleado.cs">
+    <Compile Include="Formularios\Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empleado.Designer.cs">
+    <Compile Include="Formularios\Empleado.Designer.cs">
       <DependentUpon>Empleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Entrada.cs">
+    <Compile Include="Formularios\Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Entrada.Designer.cs">
+    <Compile Include="Formularios\Entrada.Designer.cs">
       <DependentUpon>Entrada.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularioConsultas.cs">
+    <Compile Include="Formularios\FormularioConsultas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormularioConsultas.Designer.cs">
+    <Compile Include="Formularios\FormularioConsultas.Designer.cs">
       <DependentUpon>FormularioConsultas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="Formularios\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
+    <Compile Include="Formularios\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Formularios\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Formularios\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuConsultas.cs">
+    <Compile Include="Formularios\MenuConsultas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuConsultas.Designer.cs">
+    <Compile Include="Formularios\MenuConsultas.Designer.cs">
       <DependentUpon>MenuConsultas.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuMantenimientos.cs">
+    <Compile Include="Formularios\MenuMantenimientos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuMantenimientos.Designer.cs">
+    <Compile Include="Formularios\MenuMantenimientos.Designer.cs">
       <DependentUpon>MenuMantenimientos.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuProcesos.cs">
+    <Compile Include="Formularios\MenuProcesos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuProcesos.Designer.cs">
+    <Compile Include="Formularios\MenuProcesos.Designer.cs">
       <DependentUpon>MenuProcesos.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuReportes.cs">
+    <Compile Include="Formularios\MenuReportes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuReportes.Designer.cs">
+    <Compile Include="Formularios\MenuReportes.Designer.cs">
       <DependentUpon>MenuReportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Proveedor.cs">
+    <Compile Include="Formularios\Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Proveedor.Designer.cs">
+    <Compile Include="Formularios\Proveedor.Designer.cs">
       <DependentUpon>Proveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\CrystalReport1.cs">
@@ -201,61 +201,61 @@
       <DependentUpon>ReporteSalida.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Salidacs.cs">
+    <Compile Include="Formularios\Salidacs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Salidacs.Designer.cs">
+    <Compile Include="Formularios\Salidacs.Designer.cs">
       <DependentUpon>Salidacs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Seleccion.cs">
+    <Compile Include="Formularios\Seleccion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Seleccion.Designer.cs">
+    <Compile Include="Formularios\Seleccion.Designer.cs">
       <DependentUpon>Seleccion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios.cs">
+    <Compile Include="Formularios\Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios.Designer.cs">
+    <Compile Include="Formularios\Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Articulo.resx">
+    <EmbeddedResource Include="Formularios\Articulo.resx">
       <DependentUpon>Articulo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DevolucionSalida.resx">
+    <EmbeddedResource Include="Formularios\DevolucionSalida.resx">
       <DependentUpon>DevolucionSalida.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Departamento.resx">
+    <EmbeddedResource Include="Formularios\Departamento.resx">
       <DependentUpon>Departamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Devolucionentrada.resx">
+    <EmbeddedResource Include="Formularios\Devolucionentrada.resx">
       <DependentUpon>Devolucionentrada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empleado.resx">
+    <EmbeddedResource Include="Formularios\Empleado.resx">
       <DependentUpon>Empleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entrada.resx">
+    <EmbeddedResource Include="Formularios\Entrada.resx">
       <DependentUpon>Entrada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormularioConsultas.resx">
+    <EmbeddedResource Include="Formularios\FormularioConsultas.resx">
       <DependentUpon>FormularioConsultas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
+    <EmbeddedResource Include="Formularios\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Formularios\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuConsultas.resx">
+    <EmbeddedResource Include="Formularios\MenuConsultas.resx">
       <DependentUpon>MenuConsultas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuMantenimientos.resx">
+    <EmbeddedResource Include="Formularios\MenuMantenimientos.resx">
       <DependentUpon>MenuMantenimientos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuProcesos.resx">
+    <EmbeddedResource Include="Formularios\MenuProcesos.resx">
       <DependentUpon>MenuProcesos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuReportes.resx">
+    <EmbeddedResource Include="Formularios\MenuReportes.resx">
       <DependentUpon>MenuReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -267,7 +267,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Proveedor.resx">
+    <EmbeddedResource Include="Formularios\Proveedor.resx">
       <DependentUpon>Proveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\CrystalReport1.rpt">
@@ -305,13 +305,13 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteSalida.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Salidacs.resx">
+    <EmbeddedResource Include="Formularios\Salidacs.resx">
       <DependentUpon>Salidacs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Seleccion.resx">
+    <EmbeddedResource Include="Formularios\Seleccion.resx">
       <DependentUpon>Seleccion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios.resx">
+    <EmbeddedResource Include="Formularios\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
