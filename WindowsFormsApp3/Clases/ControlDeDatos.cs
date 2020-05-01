@@ -86,13 +86,12 @@ namespace WindowsFormsApp3.Clases
 
         }
 
+        //Metodo que guarda los detalles registrados en el datagrid
         public void GuardarDetails(DataGridView DataGrid, int IdProceso, string Proceso)
         {
             Clases.Conexion conexion = new Clases.Conexion();
             int iterador = 0, contador = 0;
             iterador = DataGrid.Rows.Count;
-            if (iterador > 0)
-            {
                 if (Proceso == "Entrada")
                 {
                     for (contador = 0; contador < iterador; contador++)
@@ -108,7 +107,6 @@ namespace WindowsFormsApp3.Clases
                         conexion.EjecutarScript("insert into salidadetail (numsalida, idarticulo, cantidad) values (" + IdProceso + ", '" + int.Parse(DataGrid.Rows[contador].Cells[0].Value.ToString()) + "', '" + int.Parse(DataGrid.Rows[contador].Cells[2].Value.ToString()) + "')");
                     }
                 }
-            }
         }
         public static void CambiosRealizados()
         {

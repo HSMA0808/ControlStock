@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp3.Clases
 {
-    class Empleado : ControlDeDatos
+    class Empleado : ControlDeDatos, IEntidadesBase
     {
         public int IdEmpleado;
         public string Nombre;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp3.Clases
 {
-    class Entrada
+    class Entrada 
     {
         public int IdEntrada;
         public int IdUsuario;

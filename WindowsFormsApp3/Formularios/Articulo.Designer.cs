@@ -185,6 +185,7 @@
             this.txtnombrearticulo.Name = "txtnombrearticulo";
             this.txtnombrearticulo.Size = new System.Drawing.Size(140, 20);
             this.txtnombrearticulo.TabIndex = 1;
+            this.txtnombrearticulo.TextChanged += new System.EventHandler(this.txtnombrearticulo_TextChanged);
             // 
             // lblnombreart
             // 
@@ -216,6 +217,7 @@
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(123, 20);
             this.txtMarca.TabIndex = 3;
+            this.txtMarca.TextChanged += new System.EventHandler(this.txtMarca_TextChanged);
             // 
             // lblMarca
             // 
@@ -259,6 +261,7 @@
             this.txtdescripcion.Size = new System.Drawing.Size(241, 96);
             this.txtdescripcion.TabIndex = 6;
             this.txtdescripcion.Text = "";
+            this.txtdescripcion.TextChanged += new System.EventHandler(this.txtdescripcion_TextChanged);
             // 
             // lblDescripcion
             // 

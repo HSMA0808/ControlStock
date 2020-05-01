@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblldempleado = new System.Windows.Forms.Label();
             this.txtidempleado = new System.Windows.Forms.TextBox();
@@ -49,8 +51,6 @@
             this.combocategoria = new System.Windows.Forms.ComboBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +66,40 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(728, 95);
             this.panel2.TabIndex = 29;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(605, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(50, 25);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "__";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.DarkRed;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCerrar.ForeColor = System.Drawing.Color.White;
+            this.btnCerrar.Location = new System.Drawing.Point(660, 12);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(50, 25);
+            this.btnCerrar.TabIndex = 15;
+            this.btnCerrar.Text = "X";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // label1
             // 
@@ -106,6 +140,7 @@
             this.txtcontraseña.Enabled = false;
             this.txtcontraseña.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcontraseña.Location = new System.Drawing.Point(41, 198);
+            this.txtcontraseña.MaxLength = 15;
             this.txtcontraseña.Name = "txtcontraseña";
             this.txtcontraseña.PasswordChar = '*';
             this.txtcontraseña.Size = new System.Drawing.Size(129, 20);
@@ -327,9 +362,11 @@
             this.txtUsuario.Enabled = false;
             this.txtUsuario.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(253, 57);
+            this.txtUsuario.MaxLength = 15;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(129, 20);
             this.txtUsuario.TabIndex = 1;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // label2
             // 
@@ -341,40 +378,6 @@
             this.label2.Size = new System.Drawing.Size(76, 23);
             this.label2.TabIndex = 49;
             this.label2.Text = "Usuario:";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(605, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 25);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "__";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackColor = System.Drawing.Color.DarkRed;
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Location = new System.Drawing.Point(660, 12);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(50, 25);
-            this.btnCerrar.TabIndex = 15;
-            this.btnCerrar.Text = "X";
-            this.btnCerrar.UseVisualStyleBackColor = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // Usuarios
             // 

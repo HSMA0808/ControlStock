@@ -203,5 +203,17 @@ namespace WindowsFormsApp3
         {
             Clases.ControlDeDatos.MinimizarVentana(this);
         }
+
+        private void txtnombrearticulo_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtMarca_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtdescripcion_TextChanged(object sender, EventArgs e)
+        {
+        }
     }
 }

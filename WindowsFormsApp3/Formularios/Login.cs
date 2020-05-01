@@ -96,7 +96,7 @@ namespace WindowsFormsApp3
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Clases.ControlDeDatos.CerrarAplicacion();
         }
 
         private void button3_Click_2(object sender, EventArgs e)

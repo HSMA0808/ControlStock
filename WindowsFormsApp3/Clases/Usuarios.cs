@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp3.Clases
 {
-    class Usuarios : ControlDeDatos
+    class Usuarios : ControlDeDatos, IEntidadesBase
     {
         public int IdUsuario;
         public int IdEmpleado;
@@ -16,7 +16,7 @@ namespace WindowsFormsApp3.Clases
         public string Categoria;
         private DataSet DS;
 
-
+        
         public int Guardar()
         {
             Conexion C = new Conexion();

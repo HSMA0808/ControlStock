@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp3.Clases
 {
-    class Articulos : ControlDeDatos
+    class Articulos : ControlDeDatos, IEntidadesBase
     {
         public int IdArticulos;
         public int IdProveedor;

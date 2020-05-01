@@ -180,5 +180,10 @@ namespace WindowsFormsApp3
         {
             Clases.ControlDeDatos.MinimizarVentana(this);
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
