@@ -1,11 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
+using CrystalDecisions.Shared;
+using CrystalDecisions.ReportAppServer.CommLayer;
+using CrystalDecisions.ReportSource;
+using CrystalDecisions.CrystalReports.Engine;
+using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp3.Reportes
@@ -29,9 +34,19 @@ namespace WindowsFormsApp3.Reportes
                 break;
 
                 case "Articulos":
+                    ReportDocument reporte = new ReportDocument();                    
+                    DiskFileDestinationOptions diskOptions = new DiskFileDestinationOptions();
                     ReporteArticulos reporteArticulos = new ReporteArticulos();
-                    crystalReportViewer1.ReportSource = reporteArticulos;
-                    crystalReportViewer1.RefreshReport();
+                    //crystalReportViewer1.ReportSource = reporteArticulos;
+                    //crystalReportViewer1.
+                    //crystalReportViewer1.RefreshReport();
+                    diskOptions.DiskFileName = ConfigurationManager.AppSettings.Get("ReporteDeArticulos")+"ReporteDeArticulos_" + DateTime.Now.Year.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Day.ToString() + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString() + DateTime.Now.Millisecond.ToString()+".pdf";
+                    //reporte.SetDataSource(reporteArticulos.Rows);
+                    reporte.Load("C:\\Users\\Samuel\\source\\repos\\WindowsFormsApp3\\WindowsFormsApp3\\Reportes\\ReporteArticulos.rpt");
+                    reporte.ExportOptions.ExportFormatType = ExportFormatType.PortableDocFormat;
+                    reporte.ExportOptions.ExportDestinationType = ExportDestinationType.DiskFile;
+                    reporte.ExportOptions.ExportDestinationOptions = diskOptions;
+                    reporte.Export();
                     break;
 
                 case "Departamentos":
@@ -77,5 +92,10 @@ namespace WindowsFormsApp3.Reportes
          {
 
          }
+
+        private void CrystalReport1_InitReport(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -14,8 +14,10 @@ namespace WindowsFormsApp3.Reportes {
     using CrystalDecisions.Shared;
     using CrystalDecisions.ReportSource;
     using CrystalDecisions.CrystalReports.Engine;
-    
-    
+    using CrystalDecisions.ReportAppServer.CommLayer;
+
+
+
     public class CrystalReport1 : ReportClass {
         
         public CrystalReport1() {

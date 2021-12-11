@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows;
+using System.Configuration;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp3.Clases
@@ -15,7 +16,7 @@ namespace WindowsFormsApp3.Clases
         private SqlCommand Comando;
         private SqlDataAdapter Adaptador;
         private DataTable Tabla;
-        private SqlConnection Conexion1 = new SqlConnection(@"Data Source=DESKTOP-8BMPE5K;Initial Catalog=Inventario;Integrated Security=True");
+        private SqlConnection Conexion1 = new SqlConnection(ConfigurationManager.ConnectionStrings["ControlStockString"].ConnectionString.ToString());
        
         //Metodo para abrir la conexion 
         private void Conectar(SqlConnection Conex)
